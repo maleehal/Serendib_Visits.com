@@ -126,7 +126,7 @@ header{
         width: auto;
     }    
 }
-@media only screen and (max-width: 946px) {
+@media only screen and (max-width: 400px) {
     #ho2{
         width: 580px;
     }
