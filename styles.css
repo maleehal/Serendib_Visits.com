@@ -8,7 +8,7 @@ body{
     background-color: #D7DBDD;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;  
-    border: 2px solid black;  
+    border: 2px solid #D7DBDD;  
 }
 h1, h2, h3{
     font-family: cursive;
@@ -213,7 +213,7 @@ footer{
 @media only screen and (max-width: 946px) {
     body{
         width: 1000px;
-        border: 2px solid black; 
+        border: 2px solid #D7DBDD; 
     }
     /* home page */
     .grid-a{
@@ -297,7 +297,7 @@ footer{
 }
 @media only screen and (max-width: 400px) {  
     body{
-        border: 2px solid black;
+        border: 2px solid #D7DBDD;
         width: 600px; 
     }
     header, #ho3, #ho4, #ho5{
