@@ -422,14 +422,27 @@ td{
 }
 #w3 table, #w3 thead, #w3 tr, #w3 tbody, #w4 table, #w4 thead, #w4 tr, #w4 tbody, #w5 table, #w5 thead, #w5 tr, #w5 tbody{
     padding: 20px;
-    text-align: justify;
+    text-align: left;
     
     
 }
 #w3 table img, #w4 table img, #w5 table img{
     width: 300px;
-    height: auto;
-    
+    height: auto;   
+}
+/* Wildlife table colours */
+#c1{
+    background-color: #5D6D7E;
+    color: white;
+}
+#c2{
+    background-color: #FDEBD0;
+}
+#c3{
+    background-color: #ABB2B9;
+}
+#c4{
+    background-color: #A2D9CE;
 }
 @media only screen and (max-width: 946px){
     .grid-a{
