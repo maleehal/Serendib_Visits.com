@@ -3,6 +3,10 @@
     --h-color: #09054fdb;
     --b-color: #FDFEFE;
 }
+body{
+    background: url(image/White-Marble-Wallpaper.webp) fixed;
+    background-size: cover;
+}
 #hg2 a{
     list-style-type: none;
     display: block;
