@@ -1,0 +1,950 @@
+/* main styles and variables */
+:root{
+    --h-color: #09054fdb;
+    --b-color: #F2F4F4;
+    
+}
+body{
+    background-color: #D7DBDD;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;  
+    border: 2px solid #D7DBDD;  
+}
+h1, h2, h3{
+    font-family: cursive;
+}
+
+/* header*/
+header{
+    background-color: var(--h-color);
+}
+
+/* header images of all pages */
+.h-i{
+    background: url(image/h-home.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    
+}
+.w-i{
+    background: url(image/Wild-Life.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.b-i{
+    background: url(image/beaches.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.a-i{
+    background: url(image/anu-h.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.g-i{
+    background: url(image/galle-h.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.ac-i{
+    background: url(image/h-act.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.c-i{
+    background: url(image/h-pd.webp) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+/* main title of the web page */
+.h-t{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    text-shadow: 5px 5px var(--h-color);
+    font-size: 120px;
+    font-family: cursive;
+}
+/* navigation bar */
+.mainnav{
+    overflow: hidden;
+    position: relative;
+    background-color: var(--b-color);
+    padding: 5px;
+}
+.mainnav a{
+    float: left;
+    color: var(--h-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: cursive;
+}
+.mainnav a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);
+    transform: scale(1.1,1.1);
+}
+.mainnav a.active{
+    background-color: var(--h-color);
+    color: var(--b-color);
+    transform: scale(1.1,1.1);
+}
+.mainnav img{
+    padding: 0%;
+}
+/* common first para */
+#ho2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--b-color);
+    text-align: justify;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: gainsboro;
+    color: black;
+    font-style: bold;
+    font-size: 20px;    
+}
+/* footer*/
+footer{
+    background-color: var(--h-color);
+    padding: 20px;
+}
+.f1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+}
+.f-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--b-color);
+    border-radius: 25px;
+}
+.f-nav li a{
+    display: block;
+    color: var(--h-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.f-nav li a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);    
+}
+
+/* social media links */
+.f3{
+    color: var(--b-color);
+    text-align: center;
+}
+.grid-g{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 5px;
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15%;
+    margin-left: 25%;
+}
+.grid-h{
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+/* top button */
+.f4{
+    margin-top: 200px;
+    text-align: right;
+}
+.topbu a{
+    background-color: var(--b-color);
+    border: none;
+    color: var(--h-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.top a{
+    border-radius: 2px;
+}
+/* home page */
+.grid-a{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 20px;
+    
+    
+}
+.grid-b{
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 10px;
+    text-align: justify;    
+}
+#ho4{ 
+    text-align: justify;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;        
+}
+.grid-c{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 0.5%;
+    width: auto;
+    height: auto;
+    align-self: center;
+    
+}
+.grid-d{  
+    padding: 2%;
+    text-align: center;  
+    border-radius: 2%; 
+}
+.grid-d img{
+    border-radius: 3%;
+    width: 100%;
+    height: auto;
+}
+.grid-d:hover, .grid-h:hover{
+    transform: scale(1.5,1.5);
+    transition: all 2s;
+}
+
+/* wild lifr attractions */
+#w2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: auto;
+    background-color: var(--b-color);
+}
+#w2 li a{
+    display: block;
+    color: var(--h-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#w2 li a:hover {
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+#ym{     
+    text-align: right;
+    padding: 0;
+    
+}
+/* tables in wildlife page */
+#wild{
+    margin: 20px;    
+}
+#wild thead{
+    padding: 20px;
+}
+#wild td{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+}
+#w3 p, #w4 p, #w5 p{
+    background-color: var(--b-color);
+    text-align: justify;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    font-style: bold;    
+}
+#w3 #wild, #w3 thead, #w3 tr, #w3 tbody, #w4 table, #w4 thead, #w4 tr, #w4 tbody, #w5 table, #w5 thead, #w5 tr, #w5 tbody{
+    padding: 20px;
+    text-align: left;    
+}
+#w3 table img, #w4 table img, #w5 table img{
+    width: 300px;
+    height: auto;   
+}
+/* Wildlife table colours */
+#c1{
+    background-color: #5D6D7E;
+    color: white;
+}
+#c2{
+    background-color: #FDEBD0;
+}
+#c3{
+    background-color: #ABB2B9;
+}
+#c4{
+    background-color: #A2D9CE;
+}
+/* City of Anuradhapura */
+#ha2{
+    overflow: hidden;    
+}
+#ha2 a{
+    float: left;
+    color: var(--h-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--h-color);
+    border-radius: 50px;
+    color: var(--b-color);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#ha2 a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+#ha3, #ha5{ 
+    text-align: justify;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;        
+}
+.see{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: justify;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;  
+}
+.see-1{
+    
+    padding: 20px;
+}
+/* activities page */
+#a2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2%;
+}
+.ex{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 2%;
+}
+.ex-d{
+    padding: 2%;
+    background-color: var(--b-color);
+    
+}
+.ex img{
+    width: 400px;
+    height: auto;
+}
+#lin{
+    background-color: var(--b-color);
+    text-align: justify;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    color: black;
+    
+}
+#hl{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20%;
+    margin-right: 20%;   
+}
+#hl1 img{
+    width: 400px;
+    border-radius: 10px;
+}
+#hl1:hover{
+    opacity: 0.8;
+}
+#ac{
+    overflow: hidden;    
+}
+#ac a{
+    float: left;
+    color: var(--h-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--h-color);
+    border-radius: 50px;
+    color: var(--b-color);
+    margin-left: 650px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+#ac a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+/* beaches page */
+.b{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.b img{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.b img:hover{
+    transform: translate(50px, -25px);
+    transition: all 2s;
+}
+#nil{
+    text-align: center;
+    background-color: var(--b-color);
+    padding: 10px;
+    border-radius: 50px;
+}
+#nil p{
+    text-align: justify;
+}
+/* about us page */
+#con{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 5px;
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#con-1{
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+    
+}
+#tat{
+    text-align: center;
+}
+#tat img:hover{
+    transform: scale(1.5,1.5);
+    transition: all 2s;
+}
+.hi{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+}
+#p2{
+    padding: 10px;
+    background-color: var(--h-color);
+}
+.d-i{
+    padding: 2%;
+    background-color: var(--b-color);
+    
+}
+.d img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#st{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    align-self: center;
+    align-items: center;    
+}
+#sd{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10px;
+    align-self: center;
+    align-items: center;
+}
+#st-1, #st-2{
+    background-color: rgb(240, 249, 255);
+    border-radius: 500px;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+#st img, #sd img{
+    width: 100px;
+}
+#st img:hover, #sd img:hover{
+    transform: scale(1.5,1.5);
+    transition: all 2s;
+}
+/* form */
+#don{
+    width: 60%;
+    border: 2px solid var(--h-color);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    font-size: 20px;
+    border-style: dashed;
+}
+#don input[type=text], #don input[type=number]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--h-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+#don input[type=radio]{
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+#card{
+    width: 70px;
+}
+#don #type, #don #amount{
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+#don #makedon, #don #conf{
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: var(--h-color);
+    color: var(--b-color);
+    border: 1px solid aliceblue;
+    width: 30%;
+}
+#result{
+    border: 2px black solid;
+    border-style: dotted;
+    padding: 10px;
+    width: 500px;
+    margin-left: 170px;
+}
+
+/* meta tag */
+@media screen and (max-width: 1075px) {
+    body{
+        width: 1000px;
+        border: 2px solid #D7DBDD; 
+    }
+    /* home page */
+    .grid-a{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: var(--b-color);
+        border-radius: 50px;
+        padding: 20px;    
+    }
+    .grid-b{
+        
+        border-radius: 50px;
+        padding: 10px;
+        text-align: justify;    
+    }
+    /* footer*/
+    #g3{
+        width: auto;
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    .f2{
+        width: 100%;
+        height: auto;
+    }
+    .f3{
+        color: var(--b-color);
+        text-align: center;
+    }
+    .grid-g{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 15%;
+        margin-left: 25%;
+    }
+    .f4{
+        margin-top: 0;
+        text-align: right;
+    }
+    header, #ho3, #ho4, #ho5{
+        width: 1000px;
+    }
+    /* header */
+    .h-t p{
+        font-size: 100px;
+    }
+    #hg2 a{
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: var(--b-color);
+    }
+    /* navigation bar */
+    .mainnav{
+        overflow: hidden;
+        position: relative;
+        background-color: var(--h-color);
+        
+    }
+    .mainnav a{
+        list-style-type: none;
+        display: block;
+        text-decoration: none;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        background-color: var(--b-color);
+        color: var(--h-color);
+        text-align: center;
+        border: 1px solid var(--h-color);
+    }
+    .mainnav a.active{
+        background-color: var(--h-color);
+        color: var(--b-color);
+    }   
+}
+@media screen and (max-width: 400px) {  
+    body{
+        border: 2px solid #D7DBDD;
+        width: 600px; 
+    }
+    header, #ho3, #ho4, #ho5{
+        width: 590px;
+        height: auto;
+    }
+    footer{
+        width: 560px;
+    }
+    .h-t p{
+        font-size: 90px;
+    }
+    /* navigation bar */
+    .mainnav{
+        width: 575px;
+    }
+    .mainnav a{
+        background-color: var(--b-color);
+        color: var(--h-color);
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+    }
+    .mainnav a.active{
+        background-color: var(--h-color);
+        color: var(--b-color);
+    }
+}
+/* media tag for the common forst para */
+@media screen and (max-width: 946px) {
+    #ho2{
+        width: auto;
+    }    
+}
+@media screen and (max-width: 400px) {
+    #ho2{
+        width: 580px;
+    }
+}
+/* Wildlife tables media tags */
+@media screen and (max-width: 1075px){
+    .grid-a{
+        display: grid;
+        grid-template-columns: auto;          
+    }
+    #w1, #w2, #w3, #w4, #w5{
+        width: 1000px;
+    }
+    .ym{
+        width: 1000px;
+    }
+    #w3 table img, #w4 table img, #w5 table img{
+        width: 200px;
+        height: auto;
+    }
+    #ho4{
+        width: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    #w1, #w2, #w3, #w4, #w5{
+        width: 560px;
+    }
+    .ym{
+        width: 550px;
+    }
+    #w3 table img, #w4 table img, #w5 table img{
+        width: 100px;
+        height: auto;
+    }
+}
+/* City of Anuradhapura media tag */
+@media screen and (max-width: 1100px){
+    #ha2{
+        overflow: hidden;
+        width: auto;
+    }
+    #ha2 a{
+        width: 100px;
+    }
+    .see{
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+    }
+    .see-1{
+        width: auto;
+        padding: 1%;
+    }
+    .see-1 img{
+        width: 900px;
+    }
+    #ha1, #ha2, #ha3, #ha4, #ha5, #ha6{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .see{
+        display: grid;
+        grid-template-columns: auto;
+        width: 570px;    
+    }
+    .see-1{
+        width: 570px;
+        padding: 1%;
+    }
+    .see-1 img{
+        width: 570px;
+    }
+    #ha1, #ha2, #ha3, #ha4, #ha5, #ha6{
+        width: 570px;
+    }   
+    .h-t p{
+        font-size: 50px;
+    }
+}
+/* activities page media tags*/
+@media screen and (max-width: 1075px){
+    #a2{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 2%;
+    }
+    .ex{
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+    }
+    .ex-d, #lin{
+        width: auto;
+    }
+    #hl{
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    #ac a{
+        margin-left: 400px;
+    }
+}
+@media screen and (max-width: 400px){
+    .ex, .ex-d, #lin{
+        width: 550px;
+    }
+    #ac a{
+        margin-left: 200px;
+    }
+}
+/* beaches page media tag*/
+@media screen and (max-width: 1075px) {
+    #nil{
+        width: auto;
+    }
+    .b{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 1000px;
+    }
+    #b3 h2{
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 400px){
+    #nil{
+        width: 550px;
+    }
+    .b{
+        display: grid;
+        grid-template-columns: auto;
+        width: 550px;
+        text-align: center;
+    }
+    #nil img{
+        width: 550px;
+    }
+    #b3 h2{
+        width: 500px;
+    }
+}
+/* about us page media tag*/
+@media screen and (max-width: 1370px) {
+    #tat{
+        width: 1000px;
+    }
+    #con{
+        width: 600px;
+        
+    }
+    .d{
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+    }
+    #p2 h2, #p5 h2{
+        width: 1000px;
+    }
+    #st{
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    #sd{
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
+    .hi{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 2%;
+    }
+    #p2{
+        padding: 10px;
+        background-color: var(--h-color);
+        width: auto;
+    }
+    .d{
+        width: auto;
+    }
+    #don #type{
+        margin-left: 0%;
+    }
+    #don #makedon, #don #conf{
+        font-size: 20px;
+        width: 30%;
+    }
+
+    #card{
+        width: 50px;
+    }
+    #result{
+        margin-left: 0%;
+        width: 580px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #tat, #p2{
+        width: 600px;
+    }
+    #con{
+        width: 400px;
+        margin-left: 20%;
+        margin-right: 15%;
+        
+    }
+    #con img{
+        width: 60px;
+    }
+    .d{
+        display: grid;
+        grid-template-columns: auto;
+        width: 570px;
+    }
+    #p2 h2, #p5 h2{
+        width: 600px;
+    }
+    #st{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #sd{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #p2{
+        width: auto;
+    }
+    #card{
+        width: 30px;
+    }
+    #result{
+        margin-left: 0%;
+        width: 350px;
+    }
+}
+
+/*
+References
+facebook.en.uptodown.com (n.d.) Facebook. Available at: https://facebook.en.uptodown.com/android (Accessed 11 June 2022).
+SANTOS, J. M. D. (2021) Top YouTube Channels for Project Management Videos. Available at: https://project-management.com/project-management-videos-youtube-channels/ (Accessed 11 June 2022).
+TransparentPNG.com (2021) PNG Images: instagram Logo icon. Available at: https://www.transparentpng.com/cats/instagram-logo-icon-1943.html (Accessed 11 June 2022).
+www.freepnglogos.com (2021) Twitter Logo PNG, Free Transparent Twitter Icon. Available at: https://www.freepnglogos.com/pics/logo-twitter-png (Accessed 11 June 2022).
+*/

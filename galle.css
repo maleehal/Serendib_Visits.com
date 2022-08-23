@@ -1,0 +1,78 @@
+/* Galle page */
+:root{
+    --h-color: #09054fdb;
+    --b-color: #FDFEFE;
+}
+body{
+    background: url(image/White-Marble-Wallpaper.webp) fixed;
+    background-size: cover;
+}
+#hg2 a{
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    /* padding: 20px; */
+    padding: 10px;
+    width: auto;
+    border-radius: 50px;
+    background-color: var(--b-color);
+    color: var(--h-color);
+}
+#hg2 a:hover {
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+#hg3, #hg5{
+    background-color: var(--b-color); 
+    padding: 10px;
+    border-radius: 50px;
+    text-align: justify;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cri{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cri img{
+    width: 490px;
+}
+.cri-1{
+    padding: 10px;
+    background-color: var(--b-color);
+    border-radius: 30px;
+    text-align: justify;
+}
+.cri-2{
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+/* meta tag */
+@media only screen and (max-width: 946px) {
+    .cri{
+        width: auto;
+    }
+    #hg3, #hg5{
+        width: auto;
+    }
+    #hg2{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .cri{
+        display: grid;
+        grid-template-columns: auto;
+        width: 600px;
+    }
+    #hg3, #hg5{
+        width: 600px;
+    }
+    #hg2{
+        width: 600px;
+    }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a site about cakes, especially cupcakes">
+        <title>BOOK YOUR ACTIVITIES</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-1.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="image\fav\favicon_package_v0.16\apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="image\fav\favicon_package_v0.16\favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="image\fav\favicon_package_v0.16\favicon-16x16.png">
+        <link rel="manifest" href="image\fav\favicon_package_v0.16\site.webmanifest">
+        <link rel="shortcut icon" href="image\fav\favicon_package_v0.16\favicon.ico">
+        <meta name="msapplication-TileColor" content="#09054f">
+        <meta name="msapplication-config" content="image\fav\favicon_package_v0.16\browserconfig.xml">
+        <meta name="theme-color" content="#09054f">
+    </head>
+    <body>
+        <header>
+             
+            <section id="g1">  
+                 
+                <img src="image/logo.jpg.webp" alt="Comapny_Logo" width="50px" height="auto">
+                <div class="mainnav">      
+                    <a href="index.html">Home</a>
+                    <a href="wildlife_attractions.html">Wildlife Attractions</a>
+                    <a href="beaches.html">Beaches</a>
+                    <a class="active" href="activities.html">Activities</a>
+                    <a href="heri_locations_A.html">Sacred City of Anuradhapura</a>
+                    <a href="heri_location_G.html">Galle</a>
+                    <a href="contact_us.html">Purchases & Donations</a>        
+                </div>         
+            </section>
+
+            <section id="hof1">
+                
+                <div class="acf-i">
+                    <div class="h-act">
+                        <p>Book your Activities</p>
+                        <video class="video" autoplay muted loop>
+                            <source src="image/v.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section>
+            <h1>Price Chart for activities</h1>
+            <div id="prices">
+                
+                <div id="prices-1">
+                    <table >
+                        <thead>
+                            <td id="heading" colspan="3">Ticket Prices</td>
+                        </thead>
+                        <th>
+                            
+                            <td id="heading">Adult</td>
+                            <td id="heading">Child (Age 3-12)</td>
+                            
+                        </th>
+                        <tr>
+                            <td id="heading">Local Customers</td>
+                            <td>1000 LKR</td>
+                            <td>500 LKR</td>
+                        </tr>
+                        <tr>
+                            <td id="heading">International Customers</td>
+                            <td>5000 LKR</td>
+                            <td>2500 LKR</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="prices-1">
+                    <table >
+                        <thead>
+                            <td id="heading" colspan="3">Duration</td>
+                        </thead>
+                        <th>    
+                            <td id="heading">Local Customers</td>
+                            <td id="heading">International Customers</td>    
+                        </th>
+                        <tr>
+                            <td id="heading">3 Hours</td>
+                            <td>No additional charge</td>
+                            <td>No additional charge</td>
+                        </tr>
+                        <tr>
+                            <td id="heading">Half a Day</td>
+                            <td>Extra 250 LKR per Person</td>
+                            <td>Extra 500 LKR per Person</td>
+                        </tr>
+                        <tr>
+                            <td id="heading">Full Day</td>
+                            <td>Extra 500 LKR per Person</td>
+                            <td>Extra 1000 LKR per Person</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="prices-1">
+                    <table>
+                        <thead>
+                            <td id="heading" colspan="3">Extras</td>
+                        </thead>
+                        <tr>
+                            <td>Food Tokens</td>
+                            <td>500 LKR per pass</td>   
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+              
+              
+              
+              
+              
+              
+              
+        </section>
+        <section>
+            <form id="act" action="get">
+                <h2>Book Your Vacation Activities</h2>
+                <fieldset id = "pinfo">
+                    <legend>Personal Information</legend>
+                    <table>
+                        <tr>
+                            <td><label for="fname">Full Name</label></td>
+                            <td><input type="text" required id="fname" name="fname" size="50" maxlength="75"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" required id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phno">Contact Number</label></td>
+                            <td><input type="tel" required id="phno" name="phno" pattern="[0-9]{10}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="credit">Date:</label></td>
+                            <td><input type="date" id="date" required name="date"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend>Activity Booking</legend>
+                    <table>
+                        <tr>
+                            <td><label for="type">Activity:</label></td>
+                            <td><select id="type" onchange="act()">
+                                <option value="Rock Climbing">Rock Climbing</option>
+                                <option value="Diving">Diving</option>
+                                <option value="hot air balooning">Hot Air Ballooning</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="atype">Adult:</label></td>
+                            <td>
+                                <select id="atype" onchange="act()" name="adult">
+                                    <option value="a-local">Local</option>
+                                    <option value="a-international">International</option>     
+                                </select>
+                            </td>
+                            <td><label for="ano">Count:</label></td>
+                            <td><input type="number" id="ano" onchange="act()" name="a-no" size="15" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ctype">Children:</label></td>
+                            <td>
+                                <select id="ctype" onchange="act()" name="children">
+                                    <option value="c-local">Local</option>
+                                    <option value="c-international">International</option>    
+                                </select>
+                            </td>
+                            <td><label for="cno">Count:</label></td>
+                            <td><input type="number" id="cno" onchange="act()" name="c-no" size="15" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="anuual">Annual Pass:</label></td>
+                            <td>
+                                <select id="anuual" onchange="act()" name="annual">
+                                    <option value="no_annual">No Annual Pass</option>
+                                    <option value="a_local">Local Annual Pass</option>
+                                    <option value="a_international">International Annual Pass</option>     
+                                </select>
+                            </td>
+                            <td><label for="a_no">Count:</label></td>
+                            <td><input type="number" id="a_no" onchange="act()" name="a-no" size="15" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="duration">Duration:</label></td>
+                            <td> 
+                                <select id="duration" onchange="act()">
+                                    <option value="3-hours">3 Hours</option>
+                                    <option value="half">Half a Day</option>
+                                    <option value="full">Full Day</option>
+                                </select>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td><label for="food">Food Tokens</label></td>
+                            <td>
+                                <select id="food" onchange="act()">
+                                    <option value="no">NO</option>
+                                    <option value="yes">YES</option>    
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+                       
+                </fieldset>
+
+                <br>
+                <p id="temporder"></p>
+
+                <input id="add_to_Order" type="button" value="Add">
+
+                <p id="order" >
+                    <div id="tove" style="overflow-x:auto;">
+                        <table id="ftable" border="1">
+                            <tr>
+                                <td>Activity</td>
+                                <td>Adults</td>
+                                <td>No.of Adults</td>
+                                <td>Children</td>
+                                <td>No.of Children</td>
+                                <td>Duration</td>
+                                <td>Food Tokens</td>
+                                <td>Annual Tickets</td>
+                                <td>No.of Annual Tickets</td>
+                                <td>Cost</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </p>
+
+                <button id="add_to_fav"><img src="image/add-to-favorites.webp" alt="add to favourites"></button>
+                <button id="order_fav"><img src="image/favourite.webp" alt="add favourites to the basket"></button>
+                <button id="loyal"><img src="image/loyalty.webp" alt="check loyalty points"></button>
+                <button id="place_order"><img src="image/order.webp" alt="place order"></button>
+
+                <br>
+       
+            </form>               
+        </section>
+        <footer>
+            <section id="g3">
+                <div class="f1">
+                    <div class="f2">
+                        <div class="f-nav">   
+                            <ul>
+                                <li><a href="contact_us.html">About us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="f3">
+                        <div id="g5">
+                            <h2>Visit Us</h2>
+                            <div class="grid-g">
+                                <div class="grid-h"><a href="#"><img src="image/youtube.webp" alt="youtube" width="50" height="auto"></a></div>
+                                <div class="grid-h"><a href="#"><img src="image/facebook.webp" alt="facebook" width="50" height="auto"></a></div>
+                                <div class="grid-h"><a href="#"><img src="image/instergram.webp" alt="instergram" width="50" height="auto"></a></div>
+                                <div class="grid-h"><a href="#"><img src="image/twitter.webp" alt="twitter" width="50" height="auto"></a></div>    
+                            </div>
+                            <p>&copy;2022 by Serendib_Visits.com. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="f4">
+                        <div class="t">
+                            <button class="topbu top"><a href="#g1">Top</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <script src="script.js"></script>
+            
+        </footer>
+    </body>
+

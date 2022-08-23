@@ -1,0 +1,138 @@
+:root{
+    --h-color: #09054fdb;
+    --b-color: #F2F4F4;  
+}
+.h-act{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.h-act p{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    text-shadow: 5px 5px var(--h-color);
+    font-size: 120px;
+    font-family: cursive;
+}
+#video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+#prices{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid var(--h-color);
+    background-color: #605CE4;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#prices-1 table{
+    padding: 5px; 
+}
+#heading{
+    font-family: cursive;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;       
+}
+#prices-1 table td{
+    text-align: center;
+    background-color: var(--b-color);
+    padding: 5px;   
+}
+#act{
+    width: 70%;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--h-color);
+    border-style: dashed;
+}
+#act #pinfo input[type=text], #act #pinfo input[type=email], #act #pinfo input[type=tel], #act #pinfo input[type=date]{
+    width: 400px;
+    padding: 12px;
+    border: 1px solid var(--h-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#act #pinfo input[type=email]{
+    width: 400px;
+}
+#act #pinfo input[type=tel], #act #pinfo input[type=date]{
+    width: 200px;
+}
+label{ 
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+}
+#type, #atype, #ctype, #duration, #food, #ano, #cno, #anuual, #a_no{
+    width: 200px;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 15px;
+    text-align: center;
+}
+#add_to_Order{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--h-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+#place_order, #add_to_fav, #order_fav, #loyal{
+    padding: 12px;
+    border: 1px solid var(--h-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;   
+}
+#place_order img, #add_to_fav img, #order_fav img, #loyal img{
+    width: 50px;
+}
+#ftable td{
+    padding: 10px;
+    text-align: center;
+}
+@media only screen and (max-width: 946px) {
+    
+}
+@media only screen and (max-width: 400px) {
+    #prices{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #prices-1{
+        align-items: center;
+    }
+    #act{
+        width: 100%;
+        margin-left: 0%;   
+    }
+    #type, #atype, #ctype, #duration, #food, #ano, #cno, #anuual, #a_no{
+        width: 150px;
+    }
+    #ftable{
+        width: 500px;
+       /* border-collapse: collapse;*/
+    }
+}
