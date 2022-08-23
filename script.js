@@ -194,7 +194,7 @@ addtoorderBtn.onclick = function(){
         "E-mail Address: " + place.Email + "\n" + 
         "Phone Number: " + place.Phone + "\n" +
         "Date: " + place.Date + "\n" +
-        "Total Price: LKR" + place.Total;
+        "Total Price: " + place.Total + " LKR";
         tablePut();
     }       
 }
@@ -286,14 +286,13 @@ ofav.addEventListener('click', function(orderfav){
         place.Annual = annual;
         place.Annual_no = an_am;
         place.cost = add.Price;
-        place.Total += amount;
-
+        place.Total += parseInt(amount);
         
         order.innerText = 
         "Customer Name: " + place.Name + "\n" + 
         "E-mail Address: " + place.Email + "\n" + 
         "Phone Number: " + place.Phone + "\n" +
-        "Total Price: LKR" + place.Total;
+        "Total Price: " + place.Total + " LKR";
         tablePut();
     }
     
@@ -318,6 +317,12 @@ lol.addEventListener('click', function(lol){
 let finalorder = document.getElementById("placeorderBtn");
 placeorderBtn.addEventListener('click', function(placeorderBtn){
     placeorderBtn.preventDefault();
+    if(place.Total == 0){
+        alert("There are no items in the cart")
+    }else{
+        alert("Your order is successful. \n Thank you for shopping with Serendib Visits")
+        
+    }
 
-    alert("Your order is successful. \n Thank you for shopping with Serendib Visits")
+    
 });
