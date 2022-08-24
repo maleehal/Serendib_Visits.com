@@ -86,12 +86,14 @@ function priceadd(){
     }else{
         duramount = 0;
     }
-    
+
+    Pfood = add.Extra * food
+    /*
     if (add.Extra == "YES"){
         Pfood = food * ((parseInt(add.Adult_number)) + (parseInt(add.Child_number)));
     }else{
         Pfood = 0;
-    }
+    }*/
 
     if (add.Annual == "Local Annual Pass"){
         aprice = 4500 * add.Annual_no;
@@ -106,7 +108,6 @@ function priceadd(){
 }
 // Adding to the temporary basket
 function act(){
-    
     add.Activity = type.options[type.selectedIndex].text;   
     add.Adult = atype.options[atype.selectedIndex].text; 
     add.Adult_number = ano.value;
@@ -115,7 +116,7 @@ function act(){
     add.Annual = annual[annual.selectedIndex].text;
     add.Annual_no = a_no.value;
     add.Duration = duration[duration.selectedIndex].text; 
-    add.Extra = food[food.selectedIndex].text; 
+    add.Extra = food.value; 
     add.Price = priceadd();
     
     temporder.innerText = 
@@ -123,7 +124,7 @@ function act(){
     "Adults: " + add.Adult + " " + add.Adult_number + "\n" +
     "Children: " + add.Child + " " + add.Child_number + "\n" +
     "Duration: " + add.Duration + "\n" +
-    "Extra: " + add.Extra + "\n" +
+    "Food Tokens: " + add.Extra + "\n" +
     "Annual Tickets: " + add.Annual + "\n" +
     "Annual ticket numbers: " + add.Annual_no + "\n" +
     "Price: " + add.Price;
@@ -141,7 +142,7 @@ if (mm < 10) {
     mm = '0' + mm
 }
 today = yyyy + '-' + mm + '-' + dd;
-date.setAttribute("min", today);
+
 
 // order added to the basket
 const place = {
@@ -166,12 +167,13 @@ const place = {
 // loyalty points
 let cart_items = 0;
 
-addtoorderBtn.onclick = function(){
-    cart_items += 1;
+addtoorderBtn.onclick = function(a){
 
     if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 || ano.value == 0 ) {
         alert("Please fill out the required fields")
     }else {  
+        cart_items += (parseInt(add.Adult_number) + parseInt(add.Adult_number) + parseInt(add.Annual_no));
+
         place.Name = txtname.value;
         place.Email = email.value;
         place.Phone = phonenumber.value;
@@ -180,11 +182,11 @@ addtoorderBtn.onclick = function(){
         place.Adult = add.Adult;
         place.Adult_number = parseInt(add.Adult_number);
         place.Child = add.Child;
-        place.Child_number = parseInt(add.Child_number);
+        place.Child_number = parseInt(add.Adult_number);
         place.Duration = add.Duration;
         place.Extra = add.Extra;
         place.Annual = add.Annual;
-        place.Annual_no = add.Annual_no;
+        place.Annual_no = parseInt(add.Annual_no);
         place.cost = add.Price;
         place.Total += add.Price;   
         
@@ -257,11 +259,12 @@ let ofav = document.getElementById("order_fav");
 ofav.addEventListener('click', function(orderfav){
     orderfav.preventDefault();
 
+
     if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 || ano.value == 0){
         localStorage.getItem("fav") == true
         alert("No favourites added")  
     }else{
-        cart_items += 1;
+        cart_items += parseInt(add.Adult_number) + parseInt(add.Adult_number) + parseInt(add.Annual_no);
         let activity = localStorage.getItem("activity");
         let adult = localStorage.getItem("Adult");
         let adnu = localStorage.getItem("adnu");
@@ -300,7 +303,7 @@ ofav.addEventListener('click', function(orderfav){
 //loyalty calculation
 function loyal(){
     if(cart_items > 3){
-        let loyal = localStorage.setItem("loy",cart_items * 20);
+        let loyal = localStorage.setItem("loy",parseInt(cart_items * 20));
     }else{
         let loyal = localStorage.setItem("loy", 0);
     }

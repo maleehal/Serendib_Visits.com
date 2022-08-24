@@ -8,7 +8,7 @@ body{
     background-color: #D7DBDD;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;  
-    border: 2px solid #D7DBDD;  
+    border: 2px solid #D7DBDD; 
 }
 h1, h2, h3{
     font-family: cursive;
@@ -578,7 +578,7 @@ footer{
 /* meta tag */
 @media screen and (max-width: 1075px) {
     body{
-        width: 990px;
+        width: 100%;
         border: 2px solid #D7DBDD; 
     }
     /* home page */
@@ -588,6 +588,7 @@ footer{
         background-color: var(--b-color);
         border-radius: 50px;
         padding: 20px;    
+        margin: 0%;
     }
     .grid-b{
         
@@ -596,12 +597,16 @@ footer{
         text-align: justify;    
     }
     /* footer*/
+    footer{
+        width: 100%;
+    }
     #g3{
-        width: auto;
+        width: 90%
     }
     .f1{
         display: grid;
         grid-template-columns: auto;
+        width: 100%;
         
     }
     .f2{
@@ -611,23 +616,28 @@ footer{
     .f3{
         color: var(--b-color);
         text-align: center;
+        width: 100%;
     }
     .grid-g{
         margin-top: 5px;
         margin-bottom: 5px;
         margin-right: 15%;
-        margin-left: 25%;
+        margin-left: 10%;
+        width: 300px;
+    }
+    .grid-h{
+        width: 20px;
     }
     .f4{
         margin-top: 0;
         text-align: right;
     }
     header, #ho3, #ho4, #ho5{
-        width: 1000px;
+        width: 100%;
     }
     /* header */
     .h-t p{
-        font-size: 100px;
+        font-size: 50px;
     }
     #hg2 a{
         list-style-type: none;
@@ -642,6 +652,7 @@ footer{
         overflow: hidden;
         position: relative;
         background-color: var(--h-color);
+        width: 100%;
         
     }
     .mainnav a{
@@ -650,7 +661,7 @@ footer{
         text-decoration: none;
         margin: 0;
         padding: 20px;
-        width: 100%;
+        width: 90%;
         background-color: var(--b-color);
         color: var(--h-color);
         text-align: center;
@@ -664,21 +675,31 @@ footer{
 @media screen and (max-width: 400px) {  
     body{
         border: 2px solid #D7DBDD;
-        width: 590px; 
+        width: 100%; 
+        margin: 5px;
     }
     header, #ho3, #ho4, #ho5{
-        width: 590px;
+        width: 100%;
         height: auto;
     }
     footer{
-        width: 560px;
+        width: 100%;
+    }
+    #g3{
+        width: 90%
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        
     }
     .h-t p{
         font-size: 90px;
     }
     /* navigation bar */
     .mainnav{
-        width: 575px;
+        width: 97%;
     }
     .mainnav a{
         background-color: var(--b-color);
@@ -686,6 +707,7 @@ footer{
         display: block;
         padding: 12px;
         text-decoration: none;
+        width: 97%;
     }
     .mainnav a.active{
         background-color: var(--h-color);
@@ -695,12 +717,12 @@ footer{
 /* media tag for the common forst para */
 @media screen and (max-width: 946px) {
     #ho2{
-        width: auto;
+        width: 100%;
     }    
 }
 @media screen and (max-width: 400px) {
     #ho2{
-        width: 580px;
+        width: 100%;
     }
 }
 /* Wildlife tables media tags */
@@ -710,10 +732,10 @@ footer{
         grid-template-columns: auto;          
     }
     #w1, #w2, #w3, #w4, #w5{
-        width: 1000px;
+        width: 100%;
     }
     .ym{
-        width: 1000px;
+        width: 100%;
     }
     #w3 table img, #w4 table img, #w5 table img{
         width: 200px;
@@ -722,13 +744,16 @@ footer{
     #ho4{
         width: auto;
     }
+    #wild{
+        width: 500px;
+    }
 }
 @media screen and (max-width: 400px){
     #w1, #w2, #w3, #w4, #w5{
-        width: 560px;
+        width: 100%;
     }
     .ym{
-        width: 550px;
+        width: 100%;
     }
     #w3 table img, #w4 table img, #w5 table img{
         width: 100px;
@@ -765,17 +790,17 @@ footer{
     .see{
         display: grid;
         grid-template-columns: auto;
-        width: 570px;    
+        width: 100%;    
     }
     .see-1{
-        width: 570px;
+        width: 100%;
         padding: 1%;
     }
     .see-1 img{
-        width: 570px;
+        width: 100%;
     }
     #ha1, #ha2, #ha3, #ha4, #ha5, #ha6{
-        width: 570px;
+        width: 100%;
     }   
     .h-t p{
         font-size: 50px;
@@ -791,7 +816,8 @@ footer{
     .ex{
         display: grid;
         grid-template-columns: auto;
-        width: auto;
+        width: 100%;
+        margin-left: 0%;
     }
     .ex-d, #lin{
         width: auto;
@@ -799,7 +825,11 @@ footer{
     #hl{
         display: grid;
         grid-template-columns: auto;
+        margin-left: 0%;
         
+    }
+    #hl img{
+        width: 300px;
     }
     #ac a{
         margin-left: 400px;
@@ -807,7 +837,7 @@ footer{
 }
 @media screen and (max-width: 400px){
     .ex, .ex-d, #lin{
-        width: 550px;
+        width: 100%;
     }
     #ac a{
         margin-left: 200px;
@@ -821,53 +851,55 @@ footer{
     .b{
         display: grid;
         grid-template-columns: auto auto;
-        width: 1000px;
+        width: 100%;
     }
     #b3 h2{
-        width: 1000px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 400px){
     #nil{
-        width: 550px;
+        width: 100%;
     }
     .b{
         display: grid;
         grid-template-columns: auto;
-        width: 550px;
+        width: 100%;
         text-align: center;
     }
     #nil img{
-        width: 550px;
+        width: 100%;
     }
     #b3 h2{
-        width: 500px;
+        width: 100%;
     }
 }
 /* about us page media tag*/
 @media screen and (max-width: 1370px) {
     #tat{
-        width: 1000px;
+        width: 100%;
+        
     }
     #con{
-        width: 600px;
-        
+        width: 100%;
+        margin-left: 0%;
     }
     .d{
         display: grid;
         grid-template-columns: auto;
         width: auto;
+        margin: 0%;
     }
     #p2 h2, #p5 h2{
-        width: 1000px;
+        width: 100%;
     }
     #st{
-        margin-left: 20%;
+        margin-left: 0%;
         margin-right: 20%;
         
     }
     #sd{
-        margin-left: 30%;
+        margin-left: 10%;
         margin-right: 30%;
         
     }
@@ -876,6 +908,9 @@ footer{
         grid-template-columns: auto;
         padding: 2%;
     }
+    #d-i img{
+        width: 300px;
+    }
     #p2{
         padding: 10px;
         background-color: var(--h-color);
@@ -883,6 +918,10 @@ footer{
     }
     .d{
         width: auto;
+    }
+    #don{
+        width: 100%;
+        margin-left: 0%;
     }
     #don #type{
         margin-left: 0%;
@@ -897,16 +936,16 @@ footer{
     }
     #result{
         margin-left: 0%;
-        width: 580px;
+        width: 300px;
     }
 }
 @media screen and (max-width: 400px) {
     #tat, #p2{
-        width: 600px;
+        width: 100%;
     }
     #con{
-        width: 400px;
-        margin-left: 20%;
+        width: 100%;
+        margin-left: 0%;
         margin-right: 15%;
         
     }
@@ -916,18 +955,24 @@ footer{
     .d{
         display: grid;
         grid-template-columns: auto;
-        width: 570px;
+        width: 100%;
+    }
+    .d-i img{
+        width: 300px;
     }
     #p2 h2, #p5 h2{
-        width: 600px;
+        width: 100%;
     }
     #st{
-        margin-left: 10%;
+        margin-left: 0%;
         margin-right: 10%;
     }
     #sd{
-        margin-left: 20%;
+        margin-left: 10%;
         margin-right: 20%;
+    }
+    #st img, #sd img{
+        width: 50px;
     }
     #p2{
         width: auto;
@@ -937,7 +982,7 @@ footer{
     }
     #result{
         margin-left: 0%;
-        width: 350px;
+        width: 200px;
     }
 }
 

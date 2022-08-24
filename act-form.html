@@ -166,7 +166,7 @@
                                 </select>
                             </td>
                             <td><label for="ano">Count:</label></td>
-                            <td><input type="number" id="ano" onchange="act()" name="a-no" size="15" maxlength="10"></td>
+                            <td><input type="number" id="ano" onchange="act()" name="a-no" value="0" size="15" maxlength="10"></td>
                         </tr>
                         <tr>
                             <td><label for="ctype">Children:</label></td>
@@ -177,7 +177,7 @@
                                 </select>
                             </td>
                             <td><label for="cno">Count:</label></td>
-                            <td><input type="number" id="cno" onchange="act()" name="c-no" size="15" maxlength="10"></td>
+                            <td><input type="number" id="cno" onchange="act()" name="c-no" value="0" size="15" maxlength="10"></td>
                         </tr>
                         <tr>
                             <td><label for="anuual">Annual Pass:</label></td>
@@ -189,7 +189,7 @@
                                 </select>
                             </td>
                             <td><label for="a_no">Count:</label></td>
-                            <td><input type="number" id="a_no" onchange="act()" name="a-no" size="15" maxlength="10"></td>
+                            <td><input type="number" id="a_no" onchange="act()" name="a-no" value="0" size="15" maxlength="10"></td>
                         </tr>
                         <tr>
                             <td><label for="duration">Duration:</label></td>
@@ -203,11 +203,13 @@
                         </tr>
                         <tr>
                             <td><label for="food">Food Tokens</label></td>
-                            <td>
+                            <td><input type="number" id="food" onchange="act()" name="food" size="15" maxlength="10">
+                                <!--
                                 <select id="food" onchange="act()">
                                     <option value="no">NO</option>
                                     <option value="yes">YES</option>    
                                 </select>
+                                -->
                             </td>
                         </tr>
 
