@@ -113,7 +113,7 @@ header{
     border-radius: 50px;
     background-color: gainsboro;
     color: black;
-    font-style: bold;
+    font-weight: bold;
     font-size: 20px;    
 }
 /* footer*/
@@ -284,7 +284,7 @@ footer{
     width: auto;
     padding: 10px;
     border-radius: 50px;
-    font-style: bold;    
+    font-weight: bold;    
 }
 #w3 #wild, #w3 thead, #w3 tr, #w3 tbody, #w4 table, #w4 thead, #w4 tr, #w4 tbody, #w5 table, #w5 thead, #w5 tr, #w5 tbody{
     padding: 20px;

@@ -48,6 +48,8 @@ function priceadd(){
     const inthalf = 500;
     const locfull = 500;
     const intfull = 1000;
+    const loctwo = 1000;
+    const inttwo = 2000;
     const food = 500;
     let aticket = 0;
     let cticket = 0;
@@ -83,6 +85,14 @@ function priceadd(){
         duramount = (locfull * add.Adult_number) + (intfull * add.Child_number);
     }else if(add.Adult == "International" && add.Child == "Local" && add.Duration == "Full Day"){
         duramount = (intfull * add.Adult_number) + (locfull * add.Child_number);
+    }else if (add.Adult == "Local" && add.Child == "Local" && add.Duration == "Two Days"){
+        duramount = (loctwo * add.Adult_number) + (loctwo * add.Child_number);
+    }else if(add.Adult == "International" && add.Child == "International" && add.Duration == "Two Days"){
+        duramount = (inttwo * add.Adult_number) + (inttwo * add.Child_number);
+    }else if(add.Adult == "Local" && add.Child == "International" && add.Duration == "Two Days"){
+        duramount = (loctwo * add.Adult_number) + (inttwo * add.Child_number);
+    }else if(add.Adult == "International" && add.Child == "Local" && add.Duration == "Two Days"){
+        duramount = (inttwo * add.Adult_number) + (loctwo * add.Child_number);
     }else{
         duramount = 0;
     }
@@ -323,7 +333,7 @@ placeorderBtn.addEventListener('click', function(placeorderBtn){
     if(place.Total == 0){
         alert("There are no items in the cart")
     }else{
-        alert("Your order is successful. \n Thank you for shopping with Serendib Visits")
-        window.location.href = "activities.html";   
+        alert("Your order is successful. \n Thank you for shopping with Serendib Visits")       
+        window.location.href = "activities.html";
     } 
 });
