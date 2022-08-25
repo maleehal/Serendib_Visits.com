@@ -49,6 +49,9 @@
     background-color: var(--b-color);
     padding: 5px;   
 }
+#str{
+    color: white;
+}
 #act{
     width: 70%;
     padding: 10px;

@@ -167,7 +167,7 @@ const place = {
 // loyalty points
 let cart_items = 0;
 
-addtoorderBtn.onclick = function(a){
+addtoorderBtn.onclick = function(){
 
     if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 || ano.value == 0 ) {
         alert("Please fill out the required fields")
