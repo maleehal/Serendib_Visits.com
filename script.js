@@ -324,8 +324,6 @@ placeorderBtn.addEventListener('click', function(placeorderBtn){
         alert("There are no items in the cart")
     }else{
         alert("Your order is successful. \n Thank you for shopping with Serendib Visits")
-        
-    }
-
-    
+        window.location.href = "activities.html";   
+    } 
 });
