@@ -173,7 +173,7 @@ let cart_items = 0;
 
 addtoorderBtn.onclick = function(){
 
-    if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 || ano.value == 0 ) {
+    if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 ) {
         alert("Please fill out the required fields")
     }else {  
         cart_items += (parseInt(add.Adult_number) + parseInt(add.Adult_number) + parseInt(add.Annual_no));
@@ -239,7 +239,7 @@ addString.addEventListener('click', function(addtofav){
     
     let fav = localStorage.setItem("fav", "true");
 
-    if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 || ano.value == 0) {
+    if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0) {
         alert("Please fill out the required fields")
     }else {
         let activity = localStorage.setItem("activity",add.Activity);
@@ -264,7 +264,7 @@ ofav.addEventListener('click', function(orderfav){
     orderfav.preventDefault();
 
 
-    if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0 || ano.value == 0){
+    if (txtname.value == "" || email.value == "" || date.value == "" || phonenumber.value == 0){
         localStorage.getItem("fav") == true
         alert("No favourites added")  
     }else{
