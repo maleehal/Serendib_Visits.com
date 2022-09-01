@@ -98,12 +98,6 @@ function priceadd(){
     }
 
     Pfood = add.Extra * food
-    /*
-    if (add.Extra == "YES"){
-        Pfood = food * ((parseInt(add.Adult_number)) + (parseInt(add.Child_number)));
-    }else{
-        Pfood = 0;
-    }*/
 
     if (add.Annual == "Local Annual Pass"){
         aprice = 4500 * add.Annual_no;
